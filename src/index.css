@@ -1,5 +1,15 @@
 body{
     background-color: hsl(0, 0%, 10%);
+    margin: 0px;
+
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .to-do-list{
@@ -10,7 +20,15 @@ body{
 
 h1{
     font-size: 4rem;
-    color: white;
+    color: hsl(0, 0%, 10%);
+}
+
+.text-box {
+    display: inline-block;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    padding: 10px 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
 }
 
 button{
@@ -27,14 +45,18 @@ button{
 
 .add-button{
     background-color: hsl(125, 47%, 54%);
+    border: 3px solid hsla(0, 0%, 85%, 0.75);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .add-button:hover{
     background-color: hsl(125, 47%, 44%);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
 }
 
 .delete-button{
     background-color: hsl(10, 90%, 50%);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .delete-button:hover{
@@ -43,29 +65,34 @@ button{
 
 .move-button{
     background-color: hsl(207, 90%, 64%);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .move-button:hover{
     background-color: hsl(207, 90%, 54%);
 }
 
-input[type="text"]{
+input[type="text"] {
     font-size: 1.6rem;
     padding: 10px;
-    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border: 3px solid hsla(0, 0%, 85%, 0.75);
     border-radius: 5px;
-    color: hsla(0, 0%, 0%, 0.5);
+    color: hsla(0, 0%, 20%, 1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.9);
+    margin-right: 10px;
 }
 
 ol{
     padding: 0;
 }
 
-li{
+li {
     font-size: 2rem;
     font-weight: bold;
     padding: 15px;
-    background-color: hsl(0, 0%, 97%);
+    background-color: hsla(0, 0%, 100%, 0.9);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
     border: 3px solid hsla(0, 0%, 85%, 0.75);
     border-radius: 5px;
